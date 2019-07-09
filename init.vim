@@ -1,6 +1,7 @@
-"dein Scripts-----------------------------
+"dein Scripts----------------------------- 
 if &compatible
   set nocompatible               " Be iMproved
+  0
 endif
 
 " Required:
@@ -20,6 +21,8 @@ if dein#load_state('/home/oji/.vim/dein')
 
   "Plugin koko
   call dein#add('tomasr/molokai')
+  call dein#add('mattn/sonictemplate-vim')
+  call dein#add('mattn/vim-sl')
 
   " Required:
   call dein#end()
@@ -46,3 +49,16 @@ set splitright         "画面を縦分割する際に右に開く
 set clipboard=unnamed  "yank した文字列をクリップボードにコピー
 set hls                "検索した文字をハイライトする
 colorscheme molokai
+
+let g:sonictemplate_vim_template_dir = [
+      \ '~/.config/nvim/template'
+      \]
+nnoremap <Up>    :call sl#animate()<CR>
+nnoremap <Down>  :call sl#animate()<CR>
+nnoremap <Left>  :call sl#animate()<CR>
+nnoremap <Right> :call sl#animate()<CR>
+inoremap <Up>    <ESC>:call sl#animate()<CR>
+inoremap <Down>  <ESC>:call sl#animate()<CR>
+inoremap <Left>  <ESC>:call sl#animate()<CR>
+inoremap <Right> <ESC>:call sl#animate()<CR>
+
