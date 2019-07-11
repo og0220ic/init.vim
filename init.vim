@@ -63,4 +63,4 @@ inoremap <Down>  <ESC>:call sl#animate()<CR>
 inoremap <Left>  <ESC>:call sl#animate()<CR>
 inoremap <Right> <ESC>:call sl#animate()<CR>
 
-inoremap <silent> fd <ESC>
+inoremap <silent> jk <ESC>
