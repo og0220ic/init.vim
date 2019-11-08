@@ -14,7 +14,14 @@ set splitright         "画面を縦分割する際に右に開く
 set clipboard=unnamed  "yank した文字列をクリップボードにコピー
 set hls                "検索した文字をハイライトする
 set cursorline
+set noswapfile
 colorscheme molokai
+
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
+highlight Folded ctermbg=none
+highlight EndOfBuffer ctermbg=none
 
 nnoremap <Up>    :write<CR> :call sl#animate()<CR>
 nnoremap <Down>  :write<CR> :call sl#animate()<CR>
